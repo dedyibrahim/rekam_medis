@@ -56,7 +56,7 @@ $loop = $this->session->userdata('obat');
 $ht= count($loop);
 
 
-if($ht >0 ){
+if(is_array($loop) ){
 $html .= "<table class='table table-striped table-sm table-bordered table-condensed table-hover'>"
         . "<tr>"
         . "<th style='width: 90%;' >Nama Obat</th>"
